@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#contactForm {
+    display:inline-block;
+    padding:0.8em 0;
+    margin:0;
+    border-top:1px solid #333;
+    border-bottom:1px solid #333;
+    text-align:right;
+}
+
+#contactForm label {
+    display:block;
+    padding:0.4em;
+}
+
+#contactForm label span {
+    margin-right:10px;
+    vertical-align:top;
+}
+
+#contactForm input[type=text] {
+    width:30em;
+}
+#contactForm textarea {
+    width:28em;
+    height:8em;
+}
+
+#contactForm input[type=submit] {
+    margin-top:0.8em;
+}
+
+iframe {
+    max-width: 300px;
+    height: 300px;
+    border: none;
+}
+
+@media screen and (max-width: 840px) {
+    #contactForm {text-align: left;}
+    #contactForm label span {display: block;}
+}
+
+@media screen and (max-width: 640px) {
+    #contactForm input [type=text], #contactForm textarea {width: 96%;}
+}

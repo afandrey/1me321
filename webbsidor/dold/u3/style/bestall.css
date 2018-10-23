@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#orderForm {
+    display:inline-block;
+    padding:0.8em 0;
+    margin:0;
+    border-top:1px solid #333;
+    text-align:right;
+}
+
+#orderForm label {
+    display:block;
+    padding:0.4em;
+}
+
+#orderForm label span {
+    margin-right:10px;
+    vertical-align:top;
+}
+
+#orderForm input[type=text] {
+    width:25em;
+}
+#orderForm textarea {
+    width:23em;
+    height:8em;
+}
+
+#orderForm input[type=submit] {
+    margin-top:0.8em;
+}
+
+#orderInfo {
+    background-color:#600;
+    color:#FFF;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 700px) {
+    #orderInfo {float: right; width: 30%; padding: 2%;}
+}
+
+@media screen and (max-width: 450px) {
+    #orderForm {text-align:left;}
+    #orderForm label span {display: block;}
+    #orderForm input [type=text], #orderForm textarea {width: 96%;}
+}

@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, header, nav, main, section, footer {
+    margin: 0;
+    padding: 0;
+}
+header, nav, main, footer, section {
+    display: block;
+}
+
+#wrapper {
+    background-color: #FDB;
+    max-width: 800px;
+    margin: 0 auto;
+}
+body {
+    background-color: #FFE;
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+}
+header {
+    background-image: url(pics/bg.jpg);
+    height: 140px;
+    background-position: right;
+}
+header h1, h3 {
+    margin-top: 0px;
+    margin-left: 20px;
+    padding: 10px;
+}
+main {
+    background-color: #FED;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-left: 17.5%;
+}
+main:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    float: left;
+    width: 17.5%;
+}
+/* Tar bort punkterna */
+nav ul {
+    list-style: none;
+    padding-left: 15px;
+}
+/* Display, hur li elementen ska visas */
+nav ul li {
+    display: block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+/* Ta bort understrykning på länkarna */
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+/* Bakgrundsfärg och textfärg */
+nav a:link, nav a:visited {
+    background-color: #DB8;
+    color: #FFF;
+}
+/* Bakgrundsfärg och textfärg när du håller musen över */
+nav a:hover, nav a:active {
+    background-color: #F75;
+    color: #000;
+}
+
+#thisPage {
+    background-color: #B88;
+}
+/* Refererar till frågerutan med id, lägg till bakgrundsfärg, kantlinje med annan färg, rundade hörn, texten hamnar inte intill kanten, bredd 80&, centrera rutan, skugga i höger- & underkant */
+#questions {
+    background-color: #FDA;
+    border: solid 4px;
+    border-color: #B88;
+    border-radius: 15px;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 3px #888;
+}
+
+main h2 {
+    color: #408;
+    font-style: italic;
+}
+/* Kantlinje ovanför h3-rubrikerna */ 
+main h3 {
+    border-top: 1px solid #999;
+    padding-top: 10px;
+    color: #408;
+    margin: 0 auto;
+    clear: both;
+}
+/* Tre streck före varje h3-rubrik i main */
+main h3:before {
+    content: "--- ";
+}
+
+img {
+    max-width: 100%;
+}
+#floatImg {
+    float: right;
+    width: 120px;
+    padding: 10px;
+}
+
+th, td {
+    border: 1px solid #666;
+    padding: 8px;
+}
+/* Slår ihop cellerna, inget avstånd mellan */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 5px 2px #888;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+tr {
+    background-color: #FFF;
+}
+th {
+    background-color: #FDB;
+    color: #000;
+}
+/* Ger jämna rader i tabellen annan färg */
+tr:nth-child(even) {
+    background-color: #FFD;
+}
+
+footer {
+    background-color: #FEB;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+
+@media screen and (max-width:670px) {
+    main {margin:0;}
+    nav {float:none; width:100%;}
+    nav ul li a {display:inline-block; margin-right:0; width:40px;}
+    nav ul {padding:0; margin:0; text-align:center;}
+    nav ul li {display:inline; margin-bottom: 0;}
+    header {height: 100px; background-size:auto 100px;}
+}
+
+@media screen and (max-width:400px){
+    nav {margin:0; padding:0;}
+    nav ul {margin:0; padding:0;}
+    nav ul li {display:block; margin:0; padding:0;}
+    nav ul li a {display:block; width:auto; border:3px outset #900; margin:0;}
+}
+
+@media screen and (max-width: 300px){
+    #floatImg {float: none;}
+}
+
+@media screen and (max-width: 340px){
+    table {box-shadow: none; width: 100%; margin: 0 auto;}
+    th, td {display: block;}
+    tr {border-bottom:2px solid #333;}
+}

@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+/* ----- Förberedande stilar ----- */
+html, body, div, header, nav, main, article, section, aside, footer {margin:0; padding:0;}
+header, nav, main, article, section, aside, footer {display:block;}
+/* För webbläsare utan stöd för HTML5 */
+
+html {-webkit-text-size-adjust:100%;}
+/* Så Safari i iPhone inte skalar om texten */
+    
+/* ----- Sticky Footer ----- */
+/* Sticky Footer Solution by Steve Hatcher  http://stever.ca   http://www.cssstickyfooter.com */
+html, body {height: 100%;}
+
+#wrapper {min-height: 100%;}
+
+main {overflow: auto; padding-bottom: 40px;}
+
+footer {position: relative; margin-top: -40px; height: 20px; clear: both;}
+
+body:before {content: ""; height:100%; float:left; width:0; margin-top:-32767px;}
+/* End of sticky footer */
+
+/* ----- Layout ----- */
+body {
+   background-color: #fff1e6;
+   color: #000;
+   font-family: Calibri, sans-serif;
+   font-size: 14px;
+}
+
+#wrapper {
+   background-color: #f0e3da;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+header {
+   background-color: #fff1e6;
+}
+header img {
+   width: 100%;
+}
+header h1 {
+   display: none;
+}
+
+#showMenuLink {
+   display: block;
+   text-align: right;
+   margin: 0;
+   padding: 0.3em;
+}
+#navMenus {
+   display: none;
+}
+#navMenus:target {
+   display: block;
+}
+
+#globalnav {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#globalnav li {
+   display: block;
+}
+#globalnav a {
+   text-decoration: none;
+   margin: 0;
+   padding: 0.3em;
+   font-size: 1.5em;
+   border-bottom: 1px solid #000;
+   display: block;
+}
+#globalnav a:link, #globalnav a:visited {
+   background-color: #600;
+   color: #FFF;
+}
+#globalnav a:hover, #globalnav a:active {
+   background-color: #f0e3da;
+   color: #000;
+}
+#globalnav #thisSection {
+   background-color: #f0e3da;
+   color: #000;
+}
+
+#lokalnav {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#lokalnav li {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#lokalnav a {
+   text-decoration: none;
+   margin: 0.1em;
+   padding: 0.3em;
+   font-size: 1.5em;
+   border-bottom: 1px solid #000;
+   display: block;
+}
+#lokalnav a:link, #lokalnav a:visited {
+   color: #666;
+}
+#lokalnav a:hover, #lokalnav a:active {
+   color: #666;
+}
+#lokalnav #thisPage:before {
+   content:"> ";
+}
+
+main {
+   padding: 1%;
+   padding-bottom: 4%;
+   margin-left: 2%;
+   margin-top: 2%;
+}
+
+h1 {
+   font-family: Courier;
+   font-size: 3em;
+   margin: 0 auto;
+}
+
+main img {
+   max-width:100%;
+   height:auto;
+   border-radius: 25px;
+   margin-bottom: 2em;
+}
+
+footer {
+   background-color: #6e2b2b;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+   font-size: 1.3em;
+   clear: both;
+   max-width: 980px;
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+}
+
+/* Speciella stilmallar */
+
+#content {
+   float:left;
+   width:65%;
+}
+#sidebar {
+   margin-left:67%;
+}
+#offer {
+   background-color:#600;
+   color: #FFF;
+   text-align:center;
+   padding:5px;
+   border-radius: 25px;
+}
+#offer h4 {
+   border-bottom:1px solid #FFF;
+   margin-bottom:0.5em;
+   font-size:2em;
+   font-style: italic;
+} 
+
+#storeInfo {
+   width:40%;
+}
+#storeInfo section {
+   background-color:#600;
+   color:#FFF;
+   margin:16px;
+   padding:10px;
+   border-radius:15px;
+   box-shadow:5px 5px 3px #999;
+}
+
+/* ----- klasser ----- */
+.moveRight {
+   float:right;
+   margin-bottom: 20px;
+   margin-right: 5%;
+   }
+
+/* ----- Media Queries ----- */
+@media screen and (max-width: 750px) {
+   .moveRight {float: none; margin: 0;}
+   #content {float: none; width: 100%;}
+   #sidebar {margin-left: 0; padding-bottom: 20px;}
+   #storeInfo {display: none;}
+}
+
+@media screen and (min-width: 660px) {
+   #showMenuLink {display:none;}
+	#navMenus {display:block;}
+	
+	#globalnav {background-color:#fff1e6; padding:0.8em;}
+	#globalnav li {display:inline;}
+	#globalnav a {margin-right:0.5em; padding:0.8em; font-size:1em; border-bottom:none; border-radius:1.2em 1.2em 0em 0em; display:inline;}
+	
+	#lokalnav {float: left; width: 15%; padding:0.8em; margin-top:0.5em;}
+	#lokalnav ul li {display:inline;}
+	#lokalnav a {font-size:1em; margin:0; margin-right:0.4em; border:none; display:inline;}
+	#lokalnav #thisPage {color:#900;}
+	
+	main h1 {margin-top:0.5em;}
+}
+
+@media screen and (min-width: 660px) {
+   #lokalnav {float:left; width:15%; margin:0; padding:0; margin-top:4em;}
+	#lokalnav li {display:block; padding:1em;}
+	#lokalnav a {font-size:1.2em; font-style:italic; margin:0;}
+	#lokalnav a:hover, #localnav a:active {font-weight:bold;}
+	#lokalnav #thisPage:before {content:"- ";}
+}

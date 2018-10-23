@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="sv">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Beställ — Alvas Café</title>
+		<link rel="stylesheet" type="text/css" href="style/layout.css">
+		<link rel="stylesheet" type="text/css" href="style/bestall.css">
+	</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<a href="https://www.fc.lnu.se/Login/~af222ug/dold/u3/index.htm"><img src="pics/header.jpg" alt="header"></a>
+			<h1>Alvas Café</h1>
+		</header>
+
+	<nav>
+		<p id="showMenuLink"><a href="#navMenus"><img src="pics/menu-icon.gif" alt="Visa meny"></a></p>
+			<div id="navMenus">
+		<ul id="globalnav">
+			<li><a href="index.htm">Start</a></li>
+			<li><a href="brod.htm">Sortiment</a></li>
+			<li><a href="bestall.htm" id="thisSection">Beställ</a></li>
+			<li><a href="kontakt.htm">Kontakt</a></li>
+		</ul>
+			</div> <!-- End navMenus -->
+	</nav>
+		
+		<main>
+			<h1>Beställ:</h1>
+			<p>Här kan ni göra beställningar på våra tårtor.</p>
+			<form id="orderForm" name="orderForm" method="post" action="http://www.olzzon.com/cgi-bin/p.cgi?epost=EPOSTADRESS&id=1">
+				<input type="hidden" name="form" value="Tårtbeställning">
+				<label><span>Namn</span> <input type="text" name="name"></label>
+				<label><span>Telefon</span> <input type="text" name="telefon"></label>
+				<label><span>Epost</span> <input type="text" name="epost"></label>
+				<label><span>Tårtnummer</span> <input type="text" name="cake"></label>
+				<label><span>Önskas till datum</span> <input type="text" name="date"></label>
+				<label><span>Meddelande</span> <textarea name="message"></textarea></label>
+				<label><input type="submit" value="Skicka"></label>
+			</form>
+			<div id="orderInfo">
+				<p>Kika på vårt sortiment och ange vilket tårtnummer som önskas!</p>
+				<p>I meddelande kan ni ange hur många tårtan ska räcka till, om det ska stå något på tårtan och andra speciella önskemål. Tårtorna görs i 6-, 8-, 12- eller 20-bitar.</p>
+				<p>För avhämtning nästa dag måste beställningen göras innan klockan 16:00.</p>
+			</div> <!-- End orderInfo -->
+		</main>
+	</div> <!-- End wrapper -->
+	
+		<footer>
+			Alvas Café - Cafegatan 1, 12345 Stad - tel. 070-1234567 - alvascafe@epost.se - Öppet: Må-Fr 6-18, Lö 9-16, Sö 10-15
+		</footer>
+</body>
+</html>

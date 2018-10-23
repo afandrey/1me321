@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#products figure {
+    float: left;
+    margin: 12px;
+}
+   
+#products img {
+    width: 120px;
+}
+#products h4, #products p {
+    margin: 0.1em 0;
+}
+
+/* Stil så Köp ser ut som en knapp */
+#products a {
+    background-color: #900;
+    padding: 1px;
+    text-decoration: none;
+    color: #FFF;
+    float: right;
+}
+#products a:link,#products a:visited {
+    border: 3px outset #999;
+}
+#products a:hover,#products a:active {
+    border: 3px inset #999;
+}
+
+#products input[type=checkbox] {
+    display: none;
+}
+#products img {
+    cursor: pointer;
+}
+#products input[type=checkbox]:checked + img {
+    max-width: 400px;
+    width: 100%;
+}

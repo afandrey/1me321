@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="sv">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kontakt — Alvas Café</title>
+		<link rel="stylesheet" type="text/css" href="style/layout.css">
+		<link rel="stylesheet" type="text/css" href="style/contact.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<a href="https://www.fc.lnu.se/Login/~af222ug/dold/u3/index.htm"><img src="pics/header.jpg" alt="header"></a>
+			<h1>Alvas Café</h1>
+		</header>
+
+	<nav>
+	<p id="showMenuLink"><a href="#navMenus"><img src="pics/menu-icon.gif" alt="Visa meny"></a></p>
+			<div id="navMenus">
+		<ul id="globalnav">
+			<li><a href="index.htm">Start</a></li>
+			<li><a href="brod.htm">Sortiment</a></li>
+			<li><a href="bestall.htm">Beställ</a></li>
+			<li><a href="kontakt.htm" id="thisSection">Kontakt</a></li>
+		</ul>
+			</div> <!-- End navMenus -->
+	</nav>
+		
+		<main>
+			<h1>Kontakt</h1>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4384.46030587896!2d16.338754036448776!3d56.67029045638099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1476887869359" allowfullscreen class="moveRight"></iframe>
+			<p>Har du några frågor är du varmt välkommen att kontakta oss via kontaktformuläret nedanför.</p>
+			<p>Det går även bra att ringa eller besöka oss i butiken.</p>
+				<form id="contactForm" name="contactForm" method="post" action="http://www.olzzon.com/cgi-bin/p.cgi?epost=EPOSTADRESS&id=1">
+				<input type="hidden" name="form" value="Kontakt Alvas Café">
+				<label><span>Namn</span> <input type="text" name="name"></label>
+				<label><span>Epost</span> <input type="text" name="epost"></label>
+				<label><span>Meddelande</span> <textarea name="message"></textarea></label>
+				<label><input type="submit" value="Skicka"></label>
+			</form>
+		</main>
+	</div> <!-- End wrapper -->
+	
+		<footer>
+			Alvas Café - Cafegatan 1, 12345 Stad - tel. 070-1234567 - alvascafe@epost.se - Öppet: Må-Fr 6-18, Lö 9-16, Sö 10-15
+		</footer>
+</body>
+</html>
